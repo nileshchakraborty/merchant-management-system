@@ -1,0 +1,99 @@
+<div class="jumbotron">
+  <div class="row" style="text-align: center" align="center">
+
+    <div class="col-md-5">
+      <div class="item">
+        <img class="card-img-top" src="https://www.earlypiano.co.uk/wp-content/uploads/2013/02/Worsted-Hitchpin-Cloth.jpg" alt="Card image cap"  height="300"
+             width="300"  >
+
+        <div class="item-overlay top"></div>
+      </div>
+
+
+      <!--<div class="zoom">-->
+      <!--<img class="card-img-top" src="https://www.earlypiano.co.uk/wp-content/uploads/2013/02/Worsted-Hitchpin-Cloth.jpg" alt="Card image cap"  height="300"-->
+           <!--width="300"  >-->
+      <!--</div>-->
+
+    </div>
+
+    <div class="col-md-4">
+      <br><br>
+      <div class="row" style="text-align: center" align="center">
+        <div class="col-md-5" align="left">
+        <h4><strong>Title :</strong></h4>
+        </div>
+        <div class="col-md-7" align="left">
+          <h4><strong>Plain</strong></h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <br>
+        <div class="col-md-5" align="left">
+        <h5><strong>Description :</strong></h5>
+        </div>
+
+          <div class="col-md-7" align="left">
+        <p>
+          qfbvfuehvfcfvi qfb qfbi qfbvvi qfbvfuehvfcfvi
+        </p>
+          </div>
+      </div>
+
+
+
+      <div class="row">
+        <br>
+        <div class="col-md-5" align="left">
+          <h5><strong> Enter Cloth&nbsp;Length :</strong></h5>
+        </div>
+        <div class="col-md-5">
+          <input type="text" placeholder="Length(centimeters)">
+
+        </div>
+
+
+      </div>
+
+
+
+      <div class="row">
+        <!--<div class="container" *ngFor="let type of clothtypes; let j=index">-->
+        <br>
+        <div class="col-md-5" align="left">
+          <h5><strong> Select Cloth Type :</strong></h5>
+        </div>
+
+        <div class="col-md-7" align="left">
+          <p>
+            <select [(ngModel)]="selectedItem" required>
+              <option *ngFor="let clothType of clothtypes" [ngValue]="clothType">
+                {{clothType.cloth}}
+              </option>
+            </select>
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <br>
+        <div class="col-md-5" align="left">
+          <h5><strong>  Cost per Unit:</strong></h5>
+        </div>
+        <label>{{selectedItem.cost}}</label>
+        <div class="col-md-7" align="left">
+
+        </div>
+      </div>
+
+      <!--</div>-->
+
+    </div>
+    <div class="col-md-3">
+      <br><br><br><br>
+      <a class="btn btn-primary" style="margin-left: 50px " (click)="addToCart(catalog,i)">Add to cart</a>
+    </div>
+
+  </div>
+</div>

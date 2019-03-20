@@ -1,0 +1,40 @@
+<table id = "login" style="width:80%;margin-top:130px">
+  <tr>
+    <td id="image" >
+      <img src="https://www.hunterlab.com/images/content-images/Textile_iStock_000014135120Small.png" style="width:450px;height:400px">
+    </td>
+    <td id="login_form" >
+      <form (submit)="onLoginSubmit()">
+        <table id="form">
+          <th><h3 style="color:#ff0066; font-weight:bold">Login</h3>
+          </th>
+          <tr >
+            <td>
+              <label for="username" style="float:left; width:100%; margin-bottom: 10px; font-size: 16px">Username*</label>
+            </td>
+            <td>
+              <input name="username" [(ngModel)]="username" type="text" id="username" style="width:90%; margin-bottom: 10px; border: 1px solid #636466; border-radius: 5px 5px 5px 5px;" value="" maxlength="100" />
+            </td>
+          </tr>
+          <tr >
+            <td>
+              <label for="password" style="float:left; width:100%; margin-bottom: 10px; font-size: 16px">Password*</label>
+            </td>
+            <td>
+              <input name="password" [(ngModel)]="password" type="password" id="password" style="width:90%; margin-bottom: 10px; border: 1px solid #636466; border-radius: 5px 5px 5px 5px;" value="" maxlength="100" />
+            </td>
+          </tr>
+          <tr id="buttons" >
+            <td >
+              <input type = "submit"  class="btn .btn-primary" style="margin-top:40px;margin-left:100px;background-color:#00cccc" value="Submit" >
+            </td>
+          </tr>
+        </table>
+      </form>
+    </td>
+  </tr>
+</table>
+
+
+
+

@@ -1,0 +1,84 @@
+<div class="jumbtron text-center">
+  <div id="reposition" style="margin:100px">
+    <h1 style="color:#ef426d; font-weight:bold">Order Cross Lines Fabric</h1>
+
+  </div>
+  <div class = "row" style="margin-top:10px">
+    <div class="col-md-3">
+
+      <img src="https://cdn.shopify.com/s/files/1/1086/7812/products/IMG_3483_2048x.jpg?v=1507969699" style="width:290px;height:100px,300px">
+    </div>
+    <div class="col-md-3">
+
+      <img src="https://cdn.shopify.com/s/files/1/1086/7812/products/IMG_3483_2048x.jpg?v=1507969699"  style="width:290px;height:50px,300px">
+    </div>
+    <div class="col-md-3">
+
+      <img src="https://cdn.shopify.com/s/files/1/1086/7812/products/IMG_3483_2048x.jpg?v=1507969699"  style="width:290px;height:100px,300px">
+    </div>
+    <div class="col-md-3">
+
+      <img src="https://cdn.shopify.com/s/files/1/1086/7812/products/IMG_3483_2048x.jpg?v=1507969699"  style="width:290px;height:100px,300px">
+    </div>
+  </div>
+
+</div>
+
+<table id = "cross" align="center" style="margin: 0px auto; margin-top:50px">
+  <tr>
+    <td id="cross_form" >
+      <form (submit)="oncrossOrderSubmit()">
+        <table id="form">
+
+          <tr id="cloth_length">
+
+            <label for="cloth_length" style="float:middle; width:100%; margin-bottom: 10px; font-size: 16px">Cloth&nbsp;Length</label>
+          </tr>
+          <tr>
+            <input name="cloth_length" [(ngModel)]="cloth_length" type="text" id="agency_name" style="width:90%; margin-bottom: 10px; border: 1px solid #636466; border-radius: 5px 5px 5px 5px;" value="" maxlength="100" />
+
+          </tr>
+          <tr id="bgcolor">
+            <td>
+              <label for="bgcolor" style="float:left; width:100%; margin-bottom: 10px; font-size: 16px">Select the Background Color of the Fabric</label>
+            </td>
+
+          </tr>
+          <tr>
+            <td>
+              <input type="color" align="center" value="#ff0000">
+            </td>
+          </tr>
+          <tr id="vertcolor">
+            <td>
+              <label for="vertcolor" style="float:left; width:100%; margin-bottom: 10px; font-size: 16px">Select the Vertical lines Color</label>
+            </td>
+
+          </tr>
+          <tr>
+            <td>
+              <input type="color" align="center" value="#ff0000">
+            </td>
+          </tr>
+          <tr id="horizcolor">
+            <td>
+              <label for="horizcolor" style="float:left; width:100%; margin-bottom: 10px; font-size: 16px">Select the Vertical lines Color</label>
+            </td>
+
+          </tr>
+          <tr>
+            <td>
+              <input type="color" align="center" value="#ff0000">
+            </td>
+          </tr>
+
+          <tr id="buttons" >
+            <td >
+              <input type = "submit"  class="btn .btn-primary" style="margin-top:40px;margin-left:100px;background-color:#f47d39" value="Order">
+            </td>
+          </tr>
+        </table>
+      </form>
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,41 @@
+<div class="jumbotron">
+<form (submit)="onCreateCatalogSubmit()">
+  <label>
+    <h3 style="color: #6d7fcc">
+      Upload Your own Design :
+    </h3>
+  </label>
+  <div class="row">
+    <div class = "col-md-12">
+      <h4>Upload Image of Your Design :</h4>
+      <div style="margin-top: 20px">
+        <input type="file" name="file" (change)="fileChangeEvent($event)">
+      </div>
+    </div>
+
+    <div class = "col-md-12" style="margin-top: 20px">
+      <h4>Cloth name :</h4>
+      <div>
+        <input name="title" [(ngModel)]="title" type="text" id="title" style="width:90%; margin-bottom: 10px; border: 1px solid #636466; border-radius: 5px 5px 5px 5px;" value="" maxlength="100" />
+      </div>
+    </div>
+
+    <div class = "col-md-12" >
+      <h4>Description of the cloth :</h4>
+      <div>
+        <input name="desc" [(ngModel)]="title" type="text" id="desc" style="width:90%; margin-bottom: 10px; border: 1px solid #636466; border-radius: 5px 5px 5px 5px;" value="" maxlength="200" />
+      </div>
+    </div>
+
+
+
+
+
+    <div class="col-md-12">
+      <input type = "submit"  class="btn btn-primary" style="margin-top:40px;margin-left:100px" value="Upload">
+
+    </div>
+
+  </div>
+</form>
+</div>
